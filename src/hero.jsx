@@ -2,6 +2,7 @@ import heroimage from "./images/heroimage.png"
 import { useNavigate } from "react-router-dom"
 import { motion } from "framer-motion"
 import Hammenue from "./hambugermnu"
+
     function Explrbtn(){
         return(
             <button className=" border-2 border-blue-500 py-1 px-3 rounded-md cursor-pointer "  >
@@ -26,9 +27,9 @@ function Hero(){
         </div> */}
             <div className="naviagtion w-full h-auto mt-2 flex   justify-between"  >
                       <div className="ml-4 max-xsm:ml-2  " >
-                        <h1 style={{fontFamily:'lato'}} className="text-2xl  max-xsm:text-lg " >.RealSalutions</h1>
+                        <h1 style={{fontFamily:'lato'}} className="text-2xl  max-xsm:text-lg " >EliteStates.</h1>
                       </div>
-                      <div className="max-sm:hidden ml-20"   >
+                      <div className="max-sm:hidden ml-40"   >
                         <ul  className="flex justify-between" >
                         <li  className="mr-10" > <a href="#">  Home</a></li>
                         <li  className="mr-10" > <a href="/src/About.jsx">About  </a></li>

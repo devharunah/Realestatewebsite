@@ -4,6 +4,7 @@ import house3 from "./images/modern_country.jpg"
 import location from "./images/location-pin_10024930.png"
 import meterruler from "./images/ruler_17269295.png"
 
+
 import { useNavigate } from "react-router-dom"
 
 const Houses = () => { 

@@ -1,10 +1,19 @@
 import { useForm } from "react-hook-form"
+import { useState } from "react"
+import { input } from "framer-motion/client"
 const Contactus = () =>{
    const {register, handleSubmit, formState:{errors  }} = useForm()
-   
 
+   const [inputvalue,setinputvalue] = useState( "" )
+
+   const handleinputchng = ()=>{
+    setinputvalue(Event.target.value)
+   }
     const onSubmit = (data) =>{
         console.log(data)
+        if(inputvalue.trim()===""){
+            window.alert("Form has been submited")
+        }
     }
     { /* onSubmit function holds and stores the input fiels data
            */  }
@@ -23,17 +32,17 @@ const Contactus = () =>{
                     </div>
                     <div className="ml-32 max-xsm:ml-0   "  >
 
-                            <form onSubmit={handleSubmit(onSubmit)} className="max-xsm:flex max-xsm:items-center max-xsm:flex-col max-xsm:justify-center " >
-                                <input className = {`bg-gray-200 px-4 py-2 ${errors.name ? 'border-red-500': 'border-gray-500'  } `}   placeholder="FirstName" type="text" {...register('name', {required:true}  )} />
+                            <form onSubmit={handleSubmit(onSubmit)   } className="max-xsm:flex max-xsm:items-center max-xsm:flex-col max-xsm:justify-center " >
+                                <input  className = {`bg-gray-200 px-4 py-2 ${errors.name ? '  border-2 border-red-500  ' :   'border-gray-500'  } `}   placeholder="FirstName" type="text" {...register('name', {required:true}  )} />
                                  { /* we first
                                 registerd  our input field for validation\\reqiured:true,means that if input field left empty wont trigger validation error */   }
 
                                 {errors.name && <p className="text-red-500"   >  Name is reqiured </p>    }
-                                <input className= {`bg-gray-200 px-4 py-2 ml-4  max-xsm:mt-2 max-xsm:ml-0 ${ errors.name ? 'border-red-500':'border-gray-500'  }  `}  placeholder="LastName" type="text" {...register('lastname',{required:true})} />
+                                <input onChange={handleinputchng} onSubmit={handleinputchng} className= {`bg-gray-200 px-4 py-2 ml-4  max-xsm:mt-2 max-xsm:ml-0 ${ errors.name ? 'border-red-500  border-2  ':'border-gray-500'  }  `}  placeholder="LastName" type="text" {...register('lastname',{required:true})} />
                                 { errors.lastname &&<p  className="text-red-500"   > Last name is required    </p>   }
                             <div className="flex justify-center items-center"  >
                             <div className="flex justify-center items-center flex-col  "  >
-                            <input   className= "py-2 px-20 bg-gray-200 mt-6"  placeholder="Eamil address" type="text" {...register('email', {required: true, pattern:/^[^\s@]+@[^\s@]+\.[^\s@]+$/} )}/>
+                            <input onChange={handleinputchng}  onSubmit={handleinputchng}   className= "py-2 px-20 bg-gray-200 mt-6"  placeholder="Eamil address" type="text" {...register('email', {required: true, pattern:/^[^\s@]+@[^\s@]+\.[^\s@]+$/} )}/>
                             {errors.email &&<p  className="text-red-500"  >Valid email is required</p>   }
 
                             </div>
@@ -42,14 +51,14 @@ const Contactus = () =>{
                                
                             </div>
                             <div className="flex justify-center items-center mt-6 max-xsm:flex-col  "  >
-                            <input className="bg-gray-200 px-4 py-2" placeholder="Companyname" type="text" />
+                            <input onChange={handleinputchng}  onSubmit={handleinputchng}  className="bg-gray-200 px-4 py-2" placeholder="Companyname" type="text" />
                             <input className="bg-gray-200 px-4 py-2 ml-4  max-xsm:ml-0 max-xsm:mt-2 "  placeholder="Position" type="text" />
                             </div>
                             <div className="flex justify-center mt-6 items-center"  >
-                                <input className="py-10 bg-gray-200 px-32"  placeholder="enter your message here......" type="text" />
+                                <input onSubmit={handleinputchng} className="py-10 bg-gray-200 px-32"  placeholder="enter your message here......" type="text" />
                             </div>
                             <div className="flex justify-center items-center mt-6"  >
-                                <input value={'send'} className="bg-blue-500 py-1 px-10 rounded-lg text-white cursor-pointer" type="submit" />
+                                <input onChange={handleinputchng}  onSubmit={handleinputchng} value={'send'} className="bg-blue-500 py-1 px-10 rounded-lg text-white cursor-pointer" type="submit" />
                             </div>
                             </form>
                     </div>

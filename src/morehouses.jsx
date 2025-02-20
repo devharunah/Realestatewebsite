@@ -4,7 +4,14 @@ import house2 from "./images/Luxury_hm.jpg"
 import house3 from "./images/modern_country.jpg"
 import location from "./images/location-pin_10024930.png"
 import meterruler from "./images/ruler_17269295.png"
+import house4 from "./images/house_4.jpeg"
 import { useNavigate } from "react-router-dom"
+import manshions from "./images/manshions.jpeg"
+import superfancy from "./images/superfancy.jpeg"
+import fancy_houses from "./images/fancy_houses.jpg"
+import stuning_house from "./images/stuning_house.jpeg"
+import greens_house from "./images/greens_house.jpeg"
+import night_home from "./images/night_home.jpeg"
 
 
 const Morehouses = ()  =>{
@@ -42,7 +49,7 @@ const Morehouses = ()  =>{
             <div className="more "  >
                   <div  className="w-auto grid  pb-20 mt-10  grid-cols-3 gap-x-10  gap-y-32  grid-rows-3 max-sm:flex max-sm:flex-col max-sm:items-center  "  >
                   <div  className="w-96 h-96 ml-6 relative shadow-md max-xsm:w-80 max-xsm:h-80 ">
-                                <img  className="w-full h-full  rounded-lg object-cover" src={house1} alt="" />
+                                <img  className="w-full h-full  rounded-lg object-cover" src={house4} alt="" />
                                 <div className="bg-blue-600 text-white absolute w-50 flex flex-col items-center justify-center top-0 left-0 h-28 rounded-lg"  >
                                 <h1 className="font-bold text-2xl" >Starting Price</h1>
                                 <p>$3000,000</p>
@@ -106,7 +113,7 @@ const Morehouses = ()  =>{
                                     </div>
                             </div>
                             <div  className="w-96 h-96  relative shadow-md max-xsm:w-80 max-xsm:h-80  ">
-                                <img  className="w-full h-full  rounded-lg object-cover" src={house3} alt="" />
+                                <img  className="w-full h-full  rounded-lg object-cover" src={stuning_house} alt="" />
                                 <div className="bg-blue-600 text-white absolute w-50 flex flex-col items-center justify-center top-0 left-0 h-28 rounded-lg"  >
                                 <h1 className="font-bold text-2xl" >Starting Price</h1>
                                 <p>$950,000 </p> 
@@ -139,7 +146,7 @@ const Morehouses = ()  =>{
                                     </div>
                             </div>
                             <div  className="w-96 h-96  ml-6 relative shadow-md max-xsm:w-80 max-xsm:h-80 ">
-                                <img  className="w-full h-full  rounded-lg object-cover" src={house3} alt="" />
+                                <img  className="w-full h-full  rounded-lg object-cover" src={greens_house} alt="" />
                                 <div className="bg-blue-600 text-white absolute w-50 flex flex-col items-center justify-center top-0 left-0 h-28 rounded-lg"  >
                                 <h1 className="font-bold text-2xl" >Starting Price</h1>
                                 <p>$950,000 </p> 
@@ -205,7 +212,7 @@ const Morehouses = ()  =>{
                                     </div>
                             </div>
                             <div  className="w-96 h-96  relative shadow-md max-xsm:w-80 max-xsm:h-80 ">
-                                <img  className="w-full h-full  rounded-lg object-cover" src={house3} alt="" />
+                                <img  className="w-full h-full  rounded-lg object-cover" src={fancy_houses} alt="" />
                                 <div className="bg-blue-600 text-white absolute w-50 flex flex-col items-center justify-center top-0 left-0 h-28 rounded-lg"  >
                                 <h1 className="font-bold text-2xl" >Starting Price</h1>
                                 <p>$950,000 </p> 
@@ -238,7 +245,7 @@ const Morehouses = ()  =>{
                                     </div>
                             </div>
                             <div  className="w-96 h-96  ml-6 relative shadow-md  max-xsm:w-80 max-xsm:h-80 ">
-                                <img  className="w-full h-full  rounded-lg object-cover" src={house3} alt="" />
+                                <img  className="w-full h-full  rounded-lg object-cover" src={superfancy} alt="" />
                                 <div className="bg-blue-600 text-white absolute w-50 flex flex-col items-center justify-center top-0 left-0 h-28 rounded-lg"  >
                                 <h1 className="font-bold text-2xl" >Starting Price</h1>
                                 <p>$950,000 </p> 
@@ -271,7 +278,7 @@ const Morehouses = ()  =>{
                                     </div>
                             </div>
                             <div  className="w-96 h-96  relative shadow-md  max-xsm:w-80 max-xsm:h-80 ">
-                                <img  className="w-full h-full  rounded-lg object-cover" src={house3} alt="" />
+                                <img  className="w-full h-full  rounded-lg object-cover" src={night_home} alt="" />
                                 <div className="bg-blue-600 text-white absolute w-50 flex flex-col items-center justify-center top-0 left-0 h-28 rounded-lg"  >
                                 <h1 className="font-bold text-2xl" >Starting Price</h1>
                                 <p>$950,000 </p> 
@@ -304,7 +311,7 @@ const Morehouses = ()  =>{
                                     </div>
                             </div>
                             <div  className="w-96 h-96  relative shadow-md max-xsm:w-80 max-xsm:h-80  ">
-                                <img  className="w-full h-full  rounded-lg object-cover" src={house3} alt="" />
+                                <img  className="w-full h-full  rounded-lg object-cover" src={manshions} alt="" />
                                 <div className="bg-blue-600 text-white absolute w-50 flex flex-col items-center justify-center top-0 left-0 h-28 rounded-lg"  >
                                 <h1 className="font-bold text-2xl" >Starting Price</h1>
                                 <p>$950,000 </p> 
