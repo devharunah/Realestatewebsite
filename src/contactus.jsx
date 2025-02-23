@@ -1,6 +1,5 @@
 import { useForm } from "react-hook-form"
 import { useState } from "react"
-import { input } from "framer-motion/client"
 const Contactus = () =>{
    const {register, handleSubmit, formState:{errors  }} = useForm()
 
