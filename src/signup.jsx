@@ -31,9 +31,11 @@ const Signup = () =>{
                         </div>
                         <div className="flex flex-col mt-6 "  >
                         <input className= { `py-2 border-b-2  border-b-blue-500 px-10 ${errors.lastname  ? 'border-red-500':'border-blue-500'   } `} type="text" placeholder="LastName..." {...register('lastname',{required:true})}   />
+                        {errors.firstname && <p  className="text-red-500"   >Last name is needed please </p>    }
                         </div>
                         <div className="flex flex-col mt-6 "  >
                         <input className= {`py-2 border-b-2  border-b-blue-500 px-10 ${errors.email  ? 'border-red-500': 'border-blue-500' }   `} type="text" placeholder="Email..."  {...register('email',{required:true})}   />
+                        { errors.email && <p  className="text-red-500" >   Email is needed please  </p>}
                         </div>
                         <div className="flex flex-col mt-6 "  >
                         <input className=" py-2 border-b-2  border-b-blue-500 px-10" type="text" placeholder="Password..." {...register('password',{required:true, minLength:{value:8, message:'value must be 8 charcters'},
@@ -43,10 +45,10 @@ const Signup = () =>{
                             hasNumber: value => /[0-9]/.test(value) || "password must have atleast one number in it",
                             hasSpecialChar: value => /[!@#$%^&*(),.?":{}|<>]/.test(value) || 'Password must have at least one special character',
                          }  })} />
-
+                         {errors.password &&  <p> </p>   }
                         </div>
                         <div className="flex flex-col mt-6 "  >
-                        <input value={"Send"} className="bg-blue-500 py-1 px-6 text-white border-0 outline-0" type="submit" />
+                        <input value={"Send"} className="bg-blue-500 py-1 px-6 text-white cursor-pointer border-0 outline-0" type="submit" />
                         </div>
                        <div className="mt-6"  >
                         <span>Already have an account   <strong  onClick={gotologinpage} className="text-blue-500 cursor-pointer" >Login in</strong> </span>

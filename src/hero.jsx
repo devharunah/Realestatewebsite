@@ -2,7 +2,6 @@ import heroimage from "./images/heroimage.png"
 import { useNavigate } from "react-router-dom"
 import { motion } from "framer-motion"
 import Hammenue from "./hambugermnu"
-
     function Explrbtn(){
         return(
             <button className=" border-2 border-blue-500 py-1 px-3 rounded-md cursor-pointer "  >
@@ -15,11 +14,25 @@ import Hammenue from "./hambugermnu"
             <button className="bg-blue-500 py-1 px-3 text-white rounded-sm ml-2  "   >Search Now</button>
         )
     }
+    
    
 function Hero(){
+    
  const naviagte = useNavigate()
  const gotosignpage = () =>{
     naviagte('/signup')
+ }
+ const gothouses = () =>{
+    naviagte('/houses')
+ }
+ const gotabout = () =>{
+    naviagte('/About')
+ }
+ const goagents = () =>{
+    naviagte('/About')
+ }
+ const gotestimonial = () =>{
+    naviagte('/testimonial')
  }
     return(
        <div className="w-full h-2xl bg-blue-100 overflow-hidden    " >
@@ -29,13 +42,13 @@ function Hero(){
                       <div className="ml-4 max-xsm:ml-2  " >
                         <h1 style={{fontFamily:'lato'}} className="text-2xl  max-xsm:text-lg " >EliteStates.</h1>
                       </div>
-                      <div className="max-sm:hidden ml-40"   >
-                        <ul  className="flex justify-between" >
+                      <div className="max-sm:hidden w-200 ml-4"   >
+                        <ul  className="flex items-center  justify-between" >
                         <li  className="mr-10" > <a href="#">  Home</a></li>
-                        <li  className="mr-10" > <a href="/src/About.jsx">About  </a></li>
-                        <li   className="mr-10" > <a href="#">Agents </a></li>
-                        <li  className="mr-10"  > <a href="#">Testimonals  </a></li>
-                        <li   className="mr-10" > <a href="#"> FAQs</a></li>
+                        <li  onClick={gotabout} className="  cursor-pointer " > <a>About  </a></li>
+                        <li  onClick={goagents}  className="  cursor-pointer " > <a>Agents </a></li>
+                        <li  onClick={gotestimonial} className=" cursor-pointer "  > <a>Testimonals  </a></li>
+                        <li   onClick={gothouses} className="  cursor-pointer  " > <a>Houses</a></li>
                         </ul>
                       </div>
                       <div>

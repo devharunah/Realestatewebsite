@@ -1,10 +1,10 @@
 import { useForm } from "react-hook-form"
+
 import { useState } from "react"
 const Contactus = () =>{
    const {register, handleSubmit, formState:{errors  }} = useForm()
 
-   const [inputvalue,setinputvalue] = useState( "" )
-
+   const [inputvalue,setinputvalue] = useState( " " )
    const handleinputchng = ()=>{
     setinputvalue(Event.target.value)
    }
@@ -38,16 +38,13 @@ const Contactus = () =>{
 
                                 {errors.name && <p className="text-red-500"   >  Name is reqiured </p>    }
                                 <input onChange={handleinputchng} onSubmit={handleinputchng} className= {`bg-gray-200 px-4 py-2 ml-4  max-xsm:mt-2 max-xsm:ml-0 ${ errors.name ? 'border-red-500  border-2  ':'border-gray-500'  }  `}  placeholder="LastName" type="text" {...register('lastname',{required:true})} />
-                                { errors.lastname &&<p  className="text-red-500"   > Last name is required    </p>   }
+                               
                             <div className="flex justify-center items-center"  >
                             <div className="flex justify-center items-center flex-col  "  >
                             <input onChange={handleinputchng}  onSubmit={handleinputchng}   className= "py-2 px-20 bg-gray-200 mt-6"  placeholder="Eamil address" type="text" {...register('email', {required: true, pattern:/^[^\s@]+@[^\s@]+\.[^\s@]+$/} )}/>
                             {errors.email &&<p  className="text-red-500"  >Valid email is required</p>   }
 
-                            </div>
-                               
-                          
-                               
+                            </div>    
                             </div>
                             <div className="flex justify-center items-center mt-6 max-xsm:flex-col  "  >
                             <input onChange={handleinputchng}  onSubmit={handleinputchng}  className="bg-gray-200 px-4 py-2" placeholder="Companyname" type="text" />

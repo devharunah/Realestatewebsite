@@ -8,10 +8,12 @@ import About from './about';
 import Houses from './houses';
 import Signup from './signup';
 import Login from './login';
+import Testimonial from './testimonial';
 function App() {
   return (
     <Router>
       <Routes>
+
         <Route path="/" element={<Layout />} />
         {/* Created my layout.jsx so that if navigates to any of these
         componets if the user try to go back the layout.jsx componet will be renderd
@@ -20,6 +22,7 @@ function App() {
         <Route path="/houses" element={<Houses />} />
         <Route path="/morehouses" element={<Morehouses />} />
         <Route path ="/contactus" element={<Contactus />} />
+        <Route path='/testimonial' element= { <Testimonial/>} />
         <Route path='/signup' element = { <Signup/>}/>
         <Route path= '/login' element = {<Login/>} />
         
