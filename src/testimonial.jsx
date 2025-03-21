@@ -3,7 +3,7 @@ import profile1 from "./images/agent-2.jpg"
 import { motion } from "framer-motion"
 const Testimonial = () =>{
     return(
-        <div className="bg-gray-50   " >
+        <div className="bg-gray-50" >
             <div className="flex justify-center items-center mt-10  px-6 pt-20 pb-20 rounded-lg " >
             <h1 style={{fontFamily:"lato"}} className="font-bold text-2xl" >Our Testimonials </h1>
             </div>

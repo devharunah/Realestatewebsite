@@ -15,9 +15,9 @@ function App() {
       <Routes>
 
         <Route path="/" element={<Layout />} />
-        {/* Created my layout.jsx so that if navigates to any of these
+        { /* Created my layout.jsx so that if navigates to any of these
         componets if the user try to go back the layout.jsx componet will be renderd
-       CAUTION CREATE THE LAYOUT COMPONET ALL THE AIS WONT DO THAT FOR YOU */}
+       CAUTION CREATE THE LAYOUT COMPONET ALL THE AIS WONT DO THAT FOR YOU */ }
        <Route path="/about" element={<About />} />
         <Route path="/houses" element={<Houses />} />
         <Route path="/morehouses" element={<Morehouses />} />

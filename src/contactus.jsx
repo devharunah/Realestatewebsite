@@ -32,12 +32,12 @@ const Contactus = () =>{
                     <div className="ml-32 max-xsm:ml-0   "  >
 
                             <form onSubmit={handleSubmit(onSubmit)   } className="max-xsm:flex max-xsm:items-center max-xsm:flex-col max-xsm:justify-center " >
-                                <input  className = {`bg-gray-200 px-4 py-2 ${errors.name ? '  border-2 border-red-500  ' :   'border-gray-500'  } `}   placeholder="FirstName" type="text" {...register('name', {required:true}  )} />
+                                <input  className = {`bg-gray-200 px-4 py-2 ${errors.name ? '  border-2 border-red-500  ' :   'border-green-500'  } `}   placeholder="FirstName" type="text" {...register('name', {required:true}  )} />
                                  { /* we first
                                 registerd  our input field for validation\\reqiured:true,means that if input field left empty wont trigger validation error */   }
 
                                 {errors.name && <p className="text-red-500"   >  Name is reqiured </p>    }
-                                <input onChange={handleinputchng} onSubmit={handleinputchng} className= {`bg-gray-200 px-4 py-2 ml-4  max-xsm:mt-2 max-xsm:ml-0 ${ errors.name ? 'border-red-500  border-2  ':'border-gray-500'  }  `}  placeholder="LastName" type="text" {...register('lastname',{required:true})} />
+                                <input onChange={handleinputchng} onSubmit={handleinputchng} className= {`bg-gray-200 px-4 py-2 ml-4  max-xsm:mt-2 max-xsm:ml-0 ${ errors.name ? 'border-red-500  border-2  ':'border-green-500'  }  `}  placeholder="LastName" type="text" {...register('lastname',{required:true})} />
                                
                             <div className="flex justify-center items-center"  >
                             <div className="flex justify-center items-center flex-col  "  >
