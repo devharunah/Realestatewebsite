@@ -1,5 +1,5 @@
-import Testimonimg from "./images/Noprofile.jpeg"
-import profile1 from "./images/agent-2.jpg"
+import Testimonimg from "./images/quote.png"
+import profile1 from "./images/Noprofile.jpeg"
 import { motion } from "framer-motion"
 const Testimonial = () =>{
     return(

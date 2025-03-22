@@ -1,29 +1,29 @@
 import Aboutimg from "./images/aboutimg.jpg"
 import agent1 from "./images/agent-1.jpg"
-import agent2 from "./images/agent-2.jpg"
+import agent2 from "./images/haruna_githubdp.png"
 import agent3 from "./images/agent-3.jpeg"
 import { motion } from "framer-motion"
 
 function  About()  {
     function Agentslink (){
         return (
-            <div className="flex justify-center items-center mt-10 max-sm:flex-col max-sm:items-center  " >
-               <div className="bg-white p-6 rounded-lg shadow-md text-center">
+            <div className=" flex w-full items-center justify-between mt-10 max-sm:flex-col    max-sm:items-center  " >
+               <div className="bg-white p-6 rounded-lg shadow-md ml-6  px-20  max-sm:px-26 text-center">
           <img
             src={agent2}
             alt="John Doe"
-            className="w-24 h-24 rounded-full mx-auto mb-4"
+            className="w-24 h-24 rounded-full  mx-auto  mb-4"
           />
-          <h2 className="text-2xl font-semibold">DeAndre Boston</h2>
+          <h2 className="text-2xl font-semibold">Kakooza Harunah</h2>
           <p className="text-gray-600">
-            Full Stack Developer & Tech Support Engineer
+          Sales Agent & Tech Support Engineer
           </p>
           <div className="mt-4">
-            <a
+            <a 
               href={"https://github.com/dboston528"}
               target="_blank"
               className="text-blue-600 hover:underline"
-              >GitHub</a
+              >Whatsapp</a
             >
             |
             <a
@@ -34,22 +34,22 @@ function  About()  {
             >
           </div>
         </div>
-                  <div className="bg-white p-6 rounded-lg shadow-md text-center">
+        <div className="bg-white p-6 rounded-lg shadow-md  px-30  text-center  max-sm:px-36 max-sm:mt-6 " >
           <img
-            src={agent2}
+            src={agent1}
             alt="John Doe"
             className="w-24 h-24 rounded-full mx-auto mb-4"
           />
-          <h2 className="text-2xl font-semibold">DeAndre Boston</h2>
+          <h2 className="text-2xl font-semibold">Mark Anderson</h2>
           <p className="text-gray-600">
-            Full Stack Developer & Tech Support Engineer
+          Real Estate Agent
           </p>
           <div className="mt-4">
-            <a
+            <a 
               href={"https://github.com/dboston528"}
               target="_blank"
               className="text-blue-600 hover:underline"
-              >GitHub</a
+              >Whatsapp</a
             >
             |
             <a
@@ -60,22 +60,22 @@ function  About()  {
             >
           </div>
         </div>
-        <div className="bg-white p-6 rounded-lg shadow-md text-center">
+        <div className="bg-white p-6 rounded-lg shadow-md  px-30 mr-6  max-sm:px-36 max-sm:mt-10  text-center">
           <img
-            src={agent2}
+            src={agent3}
             alt="John Doe"
-            className="w-24 h-24 rounded-full mx-auto mb-4"
+            className="w-24 h-24 rounded-full mx-auto mb-4  "
           />
-          <h2 className="text-2xl font-semibold">DeAndre Boston</h2>
+          <h2 className="text-2xl font-semibold">Micehlle Parker </h2>
           <p className="text-gray-600">
-            Full Stack Developer & Tech Support Engineer
+          Real Estate Agent
           </p>
           <div className="mt-4">
-            <a
+            <a 
               href={"https://github.com/dboston528"}
               target="_blank"
               className="text-blue-600 hover:underline"
-              >GitHub</a
+              >Whatsapp</a
             >
             |
             <a
@@ -89,7 +89,8 @@ function  About()  {
             </div>
         )
     }
-    return(
+
+    return (
         <div  className="flex justify-center  mt-2 items-center flex-col" > 
            <div className="flex bg-white shadow-lg py-10 px-10 rounded-xl  mt-10 justify-center  items-center  max-md:flex-col max-md:items-center" >
            <div className="relative w-lg ml-2 max-md:ml-0 max-xsm:w-96 max-vsm:w-80 " >
@@ -129,4 +130,5 @@ function  About()  {
         </div>
     )
 }
+
 export default About
