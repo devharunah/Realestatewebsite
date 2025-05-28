@@ -1,10 +1,10 @@
 import Aboutimg from "./images/aboutimg.jpg"
 import agent1 from "./images/agent-1.jpg"
-import agent2 from "./images/haruna_githubdp.png"
+import agent2 from "./images/agent-3.jpeg"
 import agent3 from "./images/agent-3.jpeg"
 import { motion } from "framer-motion"
 
-function  About()  {
+function  About() {
     function Agentslink (){
         return (
             <div className=" flex w-full items-center justify-between mt-10 max-sm:flex-col    max-sm:items-center  " >

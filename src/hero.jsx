@@ -1,4 +1,5 @@
 import heroimage from "./images/heroimage.png"
+// heroimage.png
 import { useNavigate } from "react-router-dom"
 import { motion } from "framer-motion"
 import Hammenue from "./hambugermnu"

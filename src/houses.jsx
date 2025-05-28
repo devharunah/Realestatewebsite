@@ -1,5 +1,7 @@
 import house1 from "./images/fancy_houses.jpg"
+// fancy_houses.jpg"
 import house2 from "./images/Luxury_hm.jpg"
+// Luxury_hm.jpg"
 import house3 from "./images/modern_country.jpg"
 import location from "./images/location-pin_10024930.png"
 import meterruler from "./images/ruler_17269295.png"
