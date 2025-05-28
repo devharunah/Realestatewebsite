@@ -1,3 +1,4 @@
+import React from "react"
 import callbg from "./images/callbg.jpg"
 const Calltoaction = () =>{
 

@@ -1,3 +1,4 @@
+import React from "react"
 import house1 from "./images/fancy_houses.jpg"
 // fancy_houses.jpg"
 import house2 from "./images/Luxury_hm.jpg"
@@ -26,23 +27,19 @@ const Houses = () => {
                 <h1 className="font-bold text-2xl" >Starting Price</h1>
                 <p>$3000,000</p>
             </div>
-                <div className="flex mt-3"  >
+                <div className="flex mt-3 text-gray-500 "  >
                     <div className="flex justify-center items-center"  >
-                    <p className="font-semibold text-96 " > Chicago,illines</p>
-                    <img className="w-8 max-xsm:w-7 max-xsm:relative max-xsm:right-1 max-xsm:hidden   " src={location} alt="" />
+                    <p className="font-semibold text-96 " >Portorico</p>
                     </div>
                     <div className="flex justify-center  ml-3 items-center"  >
                         <p className="font-semibold text-96"   >200m</p>
-                        <img  className="w-6 ml-1 max-xsm:hidden " src={meterruler}  alt="" />
                     </div>
 
                     <div className="flex justify-center ml-4 items-center"  >
                         <p className="font-semibold text-96"   >4bed</p>
-                        <img  className="w-6 ml-1 max-xsm:hidden  " src={meterruler}  alt="" />
                     </div>
                     <div className="flex justify-center ml-4 items-center"  >
                         <p className="font-semibold text-96"   >3Bathrooms</p>
-                        <img  className="w-6 ml-1 max-xsm:hidden " src={meterruler}  alt="" />
                     </div>
                     
                 </div>
@@ -54,23 +51,19 @@ const Houses = () => {
                 <h1 className="font-bold text-2xl" >Starting Price</h1>
                 <p>$3000,000</p>
             </div>
-                <div className="flex mt-3"  >
+                <div className="flex text-gray-500 mt-3"  >
                     <div className="flex justify-center items-center"  >
                     <p className="font-semibold text-96" > Chicago,illines</p>
-                    <img className="w-8  max-xsm:hidden  " src={location} alt="" />
                     </div>
                     <div className="flex justify-center  ml-3 items-center"  >
                         <p className="font-semibold text-96"   >200m</p>
-                        <img  className="w-6 ml-1 max-xsm:hidden " src={meterruler}  alt="" />
                     </div>
 
                     <div className="flex justify-center ml-4 items-center"  >
                         <p className="font-semibold text-96"   >4bed</p>
-                        <img  className="w-6 ml-1 max-xsm:hidden " src={meterruler}  alt="" />
                     </div>
                     <div className="flex justify-center ml-4 items-center"  >
                         <p className="font-semibold text-96"   >3Bathrooms</p>
-                        <img  className="w-6 ml-1 max-xsm:hidden " src={meterruler}  alt="" />
                     </div>
                     
                 </div>
@@ -81,23 +74,19 @@ const Houses = () => {
                 <h1 className="font-bold text-2xl" >Starting Price</h1>
                 <p>$950,000 </p> 
             </div>
-                <div className="flex mt-3"  >
+                <div className="flex text-gray-500 mt-3"  >
                     <div className="flex justify-center items-center"  >
                     <p className="font-semibold text-96" > Olkahoma,Texas</p>
-                    <img className="w-8 max-xsm:hidden  " src={location} alt="" />
                     </div>
                     <div className="flex justify-center  ml-3 items-center"  >
                         <p className="font-semibold text-96"   >200m</p>
-                        <img  className="w-6 ml-1 max-xsm:hidden " src={meterruler}  alt="" />
                     </div>
 
                     <div className="flex justify-center ml-4 items-center"  >
                         <p className="font-semibold text-96"   >4bed</p>
-                        <img  className="w-6 ml-1 max-xsm:hidden " src={meterruler}  alt="" />
                     </div>
                     <div className="flex justify-center ml-4 items-center"  >
                         <p className="font-semibold text-96"   >3Bathrooms</p>
-                        <img  className="w-6 ml-1 max-xsm:hidden " src={meterruler}  alt="" />
                     </div>
                     
                 </div>

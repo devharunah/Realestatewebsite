@@ -1,3 +1,4 @@
+import React from "react"
 import { useForm } from "react-hook-form"
 
 import { useState } from "react"
@@ -18,10 +19,13 @@ const Contactus = () =>{
            */  }
     return(
         <div className="mt-10"  >
-            <div className="bg-white pt-20 pb-20
-             flex justify-center items-center  max-sm:flex-col  max-xsm:items-center " >
-                    <div className="max-vsm:relative max-vsm:left-4"   >
-                        <h1 style={{fontFamily:"lato"}} className="font-bold text-3xl"  >Get in touch</h1>
+            <div 
+            className="bg-white pt-20 pb-20
+            sm:flex justify-center items-center
+             
+             " >
+                    <div >
+                        <h1 style={{fontFamily:"lato"}} className="font-bold text-4xl"  >Get in touch</h1>
                         <h3 style={{fontFamily:"lato"}} className="font-semibold text-lg"  >We will love to hear from you</h3>
                         <p  className="w-96 max-vsm:w-80  " >
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quia

@@ -1,6 +1,7 @@
+import React from "react"
 import Aboutimg from "./images/aboutimg.jpg"
 import agent1 from "./images/agent-1.jpg"
-import agent2 from "./images/agent-3.jpeg"
+import agent2 from "./images/harunah_dp.png"
 import agent3 from "./images/agent-3.jpeg"
 import { motion } from "framer-motion"
 
@@ -20,14 +21,14 @@ function  About() {
           </p>
           <div className="mt-4">
             <a 
-              href={"https://github.com/dboston528"}
+              href={"https://www.instagram.com/dev_harunah/"}
               target="_blank"
               className="text-blue-600 hover:underline"
-              >Whatsapp</a
+              >Instagram</a
             >
             |
             <a
-              href="https://linkedin.com/in/deandreboston"
+              href="https://www.linkedin.com/in/kakooza-harunah-701882350/?originalSubdomain=ug"
               target="_blank"
               className="text-blue-600 hover:underline"
               >LinkedIn</a
@@ -92,8 +93,8 @@ function  About() {
 
     return (
         <div  className="flex justify-center  mt-2 items-center flex-col" > 
-           <div className="flex bg-white shadow-lg py-10 px-10 rounded-xl  mt-10 justify-center  items-center  max-md:flex-col max-md:items-center" >
-           <div className="relative w-lg ml-2 max-md:ml-0 max-xsm:w-96 max-vsm:w-80 " >
+           <div className=" grid md:grid-cols-2 grid-cols-0 bg-white py-10 px-10 rounded-xl  mt-10 justify-center  items-center" >
+           <div className="relative max-w-2xl " >
                     <img className="w-full h-full  rounded-xl   " src={Aboutimg} alt="" />
                     <div className="bg-black opacity-50 w-full h-full absolute top-0 bottom-0 right-0 rounded-xl  " >
                     </div>
@@ -105,19 +106,11 @@ function  About() {
                    opacity:1,
                 }}  className="relative right-0">
                     
-                    <h1 style={{fontFamily:"lato"}} className="text-3xl font-semibold ml-4 max-xsm:w-80 max-xsm:ml-24  "  >Passionate about finding  your dream home</h1>
-                    <p style={{fontFamily:"roboto"}} className="w-lg mt-2 ml-4 max-xsm:w-96 max-vsm:w-80 max-vsm:ml-10 " >
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate 
-                        iste ducimus vero cupiditate. Doloribus, animi natus adipisci a 
-                        similique quidem accusamus 
-                        soluta reiciendis hic possimus officia totam deserunt voluptates perspiciatis.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est beatae modi ipsam 
-                        recusandae qui, velit nemo. Quasi harum possimus hic suscipit 
-                        quia fugit. Labore placeat accusantium vitae deleniti velit a.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est beatae modi ipsam 
-                        recusandae qui, velit nemo. Quasi harum possimus hic suscipit 
-                        quia fugit. Labore placeat accusantium vitae deleniti velit a.
-                        
+                    <h1 className="text-3xl p-5 font-semibold"  >Passionate about finding  your dream home</h1>
+                    <p className="p-5" >
+                     We don’t just search—we obsess (in a healthy, non-creepy way) over every
+                      detail to make sure your next home isn’t just a house, but the house. The one where your mornings start with sunlight pouring 
+                     through the perfect window, and your evenings end with the peace of knowing you chose right.
                     </p>
                 </ motion.div>
                

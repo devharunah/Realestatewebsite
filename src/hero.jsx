@@ -1,3 +1,4 @@
+import React from "react"
 import heroimage from "./images/heroimage.png"
 // heroimage.png
 import { useNavigate } from "react-router-dom"
@@ -39,7 +40,7 @@ function Hero(){
        <div className="w-full h-2xl bg-blue-100 overflow-hidden    " >
         {/* <div style={{background:"rgba(0,0,0,0.8)"}} className="fixed resp_bar  z-30 w-screen h-screen " >
         </div> */}
-            <div className="naviagtion w-full h-auto mt-2 flex   justify-between"  >
+            <div className="naviagtion w-full h-auto mt-2 flex  px-6 justify-between"  >
                       <div className="ml-4 max-xsm:ml-2  " >
                         <h1 style={{fontFamily:'lato'}} className="text-2xl  max-xsm:text-lg " >EliteStates.</h1>
                       </div>
@@ -53,8 +54,6 @@ function Hero(){
                         </ul>
                       </div>
                       <div>
-              <input className="py-1 px-4 shadow-lg rounded-xl  max-xsm:px-2 max-xsm:ml-2  hidden max-sm:block max-vsm:px-1
-             " type="text" placeholder="Search....." />
             </div>
                       <div  className="mr-6" >
             <motion.button animate={{
@@ -70,16 +69,22 @@ function Hero(){
                     position:"relative",
                     right:0,
                     transition:{duration:1}
-                }}  className="ml-4  relative right-128 "  >
-                    <h1 className="text-2xl font-bold"  >Elevate Stress-Free Home Buying</h1>
-                    <p className="w-xl  max-xsm:w-96  " >Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum praesentium minus
-                         recusandae quaerat eius, facere corporis! Magnam eius iusto, alias temporibus sapiente
-                         optio architecto a non aliquid vel, amet earum?</p>
-                            <div className="mt-4"  >
+                }}  className="relative right-128 "  >
+                    <div className="p-6" >
+                    <h1 className=" sm:text-5xl text-3xl text-center sm:text-left mb-4 font-bold"  >Elevate Stress-Free Home Buying</h1>
+                    </div>
+                    <div className="text-center p-6 sm:text-left " >   
+                     <p>
+                     Say goodbye to overwhelm and hello to ease. We simplify every step—from search to 
+                    keys—so you can focus on the excitement, not the stress.Home, made simple.
+                    </p>
+                    <div className="mt-4"  >
                                 <Explrbtn/>
                             </div>
-                            <div className="flex justify-between mt-6"  >
-                                    <div className="flex flex-col justify-center items-center" >
+                    </div>
+                            
+                            <div className="flex justify-between px-10 mt-6"  >
+                                    <div className="flex flex-col justify-center  items-center" >
                                         <h1 className="font-bold"  >+2000</h1>
                                         <p >Listed preoperties</p>
                                     </div>

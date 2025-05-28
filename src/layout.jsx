@@ -1,4 +1,4 @@
-
+import React from 'react';
 import Hero from './hero';
 import Houses from './houses';
 import About from './about';

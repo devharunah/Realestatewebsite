@@ -1,4 +1,4 @@
-
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 //Properly setup my react router 
 import Layout from './Layout';
