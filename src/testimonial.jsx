@@ -1,4 +1,4 @@
-import Testimonimg from "./images/quote.png"
+import Testimonimg from "../public/images/quot"
 import profile1 from "./images/Noprofile.jpeg"
 import { motion } from "framer-motion"
 const Testimonial = () =>{

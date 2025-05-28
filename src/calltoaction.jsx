@@ -1,4 +1,4 @@
-import callbg from "./images/callbg.jpg"
+import callbg from "/images/callbg.jpg"
 const Calltoaction = () =>{
 
     const Emailbtn =  ()  => {
