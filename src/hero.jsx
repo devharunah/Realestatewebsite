@@ -83,7 +83,7 @@ function Hero(){
                             </div>
                     </div>
                             
-                            <div className="flex justify-between px-10 mt-6"  >
+                            <div className="sm:flex hidden justify-between border-2   px-10 mt-6"  >
                                     <div className="flex flex-col justify-center  items-center" >
                                         <h1 className="font-bold"  >+2000</h1>
                                         <p >Listed preoperties</p>
